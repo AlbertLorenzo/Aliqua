@@ -1,0 +1,48 @@
+{{> header}}
+<section id="content">
+    <div class="container">
+        <br>
+        <!-- Jumbotron -->
+        <div id="jumbotron" class="card card-article" data-target="">
+            <div class="jumbotron jumbotron-fluid" id="jumbotronImg">
+                <div class="container">
+                    <h5 class="text-center" id="jumbotronTitle">hola<br>grupo</h5>
+                    <p class="lead text-center" id="jumbotronLead">
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- Cards -->
+        <div id="cards">
+            <div class="container no-padding">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card card-article mb-3" data-target="" id="bannerTarget">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="" class="card-img" alt="" id="bannerImg">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title" id="bannerTitle"></h5>
+                                        <p class="card-text" id="bannerLead">
+                                            <p>
+                                                <p class="card-text"><small class="text-muted"
+                                                        id="bannerAuthor"></small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-columns" id="card-columns">
+                            <p id="jsonDATA" style="display: none">{{jsonData}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</section>
+<script src="/js/ajax.js"></script>
+<script src="/js/cookies.js"></script>
+<script src="/js/createCards.js"></script>
+<script src="/js/search.js"></script>
+{{> footer}}

@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css?family=Cinzel|Crimson+Text|EB+Garamond|Encode+Sans+Condensed|Open+Sans+Condensed:300|Playfair+Display|Playfair+Display+SC|Raleway|Sree+Krushnadevaraya");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=UnifrakturMaguntia");
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface");
+@import '../assets/local_fonts/gotham-condensed-thin-2-cufonfonts-webfont/style.css';
+@import '../assets/local_fonts/gotham-cufonfonts-webfont/style.css';
+@import '../assets/local_fonts/gotham-extra-light-cufonfonts-webfont/style.css';
+body {
+  background-color: #f8f8fa;
+}
+body .separator {
+  height: 5px !important;
+}
+body .btn {
+  font-size: 0.9em;
+  border: 1px solid black;
+  color: black;
+  font-weight: bold;
+  border-radius: 0;
+  background-color: transparent;
+}
+body .btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.modal-content {
+  border-radius: 0 !important;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+#header {
+  transition: all 0.225s ease-in-out;
+}
+#header #title h1 {
+  text-transform: uppercase;
+  font-size: 5.5em;
+  font-family: "Sree Krushnadevaraya", serif;
+  letter-spacing: 15px;
+}
+#header #title h1 a {
+  color: #212529 !important;
+  text-decoration: none;
+}
+#header #title p {
+  font-size: 0.9em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+#header #navigationBar .nav-item .nav-link {
+  text-transform: uppercase;
+}
+#header #searchContainer {
+  background-color: #1a1a1a;
+  width: 100%;
+  height: auto;
+}
+#header #searchContainer #searchBox {
+  display: none;
+  padding: 25px;
+}
+#header #searchContainer #searchBox input {
+  opacity: 0.2;
+  width: 100% !important;
+  outline: none;
+  background-color: transparent !important;
+  color: #f7f7f7;
+  border: 0;
+  border-bottom: 1.5px solid #f7f7f7;
+  font-size: 2.8rem;
+  transition: all 0.225s ease-in-out;
+}
+#header #searchContainer #searchBox input:hover {
+  opacity: 0.8;
+}
+#header #searchContainer #searchBox #closeBtn {
+  color: white;
+  opacity: 0.8;
+  cursor: pointer;
+}
+#header #searchContainer #searchResult {
+  display: none;
+  padding: 5px;
+}
+#header #searchContainer #searchResult div ul {
+  list-style: none;
+}
+#header #searchContainer #searchResult div ul li {
+  list-style: none;
+}
+#header #searchContainer #searchResult div ul li a {
+  color: white !important;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+#content #jumbotron .jumbotron {
+  overflow: hidden;
+  background-repeat: no-repeat;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.03);
+  margin: 0 !important;
+}
+#content #jumbotron .jumbotron h5 {
+  font-size: 6em;
+  font-family: "UnifrakturMaguntia", cursive;
+  color: white;
+}
+#content #jumbotron .jumbotron p {
+  font-size: 1.1em;
+  color: white;
+}
+#content #cards {
+  transition: all 0.3 ease;
+}
+#content #cards img {
+  border-radius: 0 !important;
+}
+#content .card {
+  border: 0;
+  border-radius: 0 !important;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.03);
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+#content .card:hover {
+  box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+#userOptions {
+  position: fixed;
+  display: none;
+  z-index: 5;
+  list-style: none;
+  padding: 15px;
+}
+#userOptions a {
+  color: black !important;
+}
+#userOptions a:hover .far {
+  opacity: 1;
+}
+#userOptions a:hover .fas {
+  opacity: 1;
+}
+#userOptions .dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+#userOptions .dropdown:hover .dropdown-content {
+  display: block;
+}
+#userOptions .fa-ellipsis-h {
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 50%;
+  color: black;
+  transition: all 0.124s ease;
+  cursor: pointer;
+  opacity: 0.2;
+  background-color: white;
+}
+#userOptions .fa-newspaper {
+  padding: 7.5px 9px 7.5px 9px;
+  border: 1px solid black;
+  opacity: 0.2;
+  background-color: white;
+}
+#userOptions .fa-home {
+  padding: 7.5px 9px 7.5px 9px;
+  border: 1px solid black;
+  opacity: 0.2;
+  background-color: white;
+}
+#userOptions .fa-sign-out-alt {
+  padding: 7.5px 11px 7.5px 9px;
+  border: 1px solid black;
+  opacity: 0.2;
+  background-color: white;
+}
+#userOptions .fa-file-alt {
+  padding: 7.5px 12px 7.5px 12px;
+  border: 1px solid black;
+  opacity: 0.2;
+  background-color: white;
+}
+
+#userOptions:hover .fa-ellipsis-h {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom: 0;
+}
+
+#editCards .card {
+  padding: 30px;
+  height: auto;
+  border-radius: 0;
+  border: 2px solid black;
+  background: white;
+  text-decoration: none;
+  color: black;
+  display: block;
+  transition: 0.25s ease;
+}
+
+#cards .edit-card {
+  border: 1px solid black;
+  border-radius: 0;
+}
+
+#footer {
+  background-color: #1a1a1a;
+  padding: 100px;
+}
+#footer div div div h1 {
+  text-transform: uppercase;
+  font-family: "Sree Krushnadevaraya", serif;
+  color: #5e5e5e;
+}
+#footer div div div p {
+  color: #5e5e5e;
+  font-size: 1em;
+}
+#footer div div div .list-inline-item a {
+  color: #5e5e5e !important;
+  transition: all 0.125s ease;
+}
+#footer div div div .list-inline-item:hover a {
+  color: white !important;
+}
+
+.modal-log-reg .container .card {
+  background-color: transparent;
+  border: 0;
+}
+.modal-log-reg .container .card-header {
+  background-color: transparent;
+}
+.modal-log-reg .container div input {
+  border-radius: 0;
+}
+
+#create-article .card-header {
+  background-color: transparent;
+  border: 0;
+}
+#create-article .card {
+  padding: 30px;
+  height: auto;
+  border-radius: 0;
+  border: 2px solid black;
+  background: white;
+  text-decoration: none;
+  color: black;
+  display: block;
+  transition: 0.25s ease;
+}
+#create-article input {
+  border-radius: 0;
+  border: 1px solid black;
+}
+#create-article select {
+  border-radius: 0;
+  border: 1px solid black;
+}
+#create-article textarea {
+  border-radius: 0;
+  border: 1px solid black;
+}
+#jumbotron .jumbotron {
+  background-position: center center;
+  background-size: cover;
+}
+/*# sourceMappingURL=main.css.map */

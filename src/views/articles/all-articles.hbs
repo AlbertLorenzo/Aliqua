@@ -1,0 +1,29 @@
+<br>
+<div id="cards">
+    <div class="container">
+        <div class="row">
+            {{#each articles }}
+            <div class="col-md-3">
+                <div class="card edit-card">
+                    <div class="card-body">
+                        <h4 class="card-title d-flex justify-content-between align-items-center">{{ title }}</h4>
+                        <p>{{ lead }}</p>
+                        <form action="/articles/delete/{{_id}}?_method=DELETE" method="POST">
+                            <input type="hidden" name="_method" value="DELETE">
+                            <button class="btn btn-block btn-sm" type="submit">Eliminar</button>
+                        </form>
+                        <a href="/articles/edit/{{_id}}" class="btn btn-block" style="margin-top: 5px">Editar</a>
+                    </div>
+                </div>
+            </div>
+            {{else }}
+            <div class="card mx-auto">
+                <div class="card-body">
+                    <p class="lead">No hay artículos creados.</p>
+                    <a href="/articles/add" class="btn btn-block">Crear artículo.</a>
+                </div>
+            </div>
+            {{/each }}
+        </div>
+    </div>
+</div>

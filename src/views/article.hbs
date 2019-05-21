@@ -1,0 +1,24 @@
+<section id="content">
+    {{> header}}
+</section>
+<br>
+<section id="article-data">
+    <div class="container no-padding">
+        <p id="articleData" style="display: none">{{jsonData}}</p>
+        <!-- Jumbotron -->
+        <div class="jumbotron" id="articleMasthead" style="border: 0 !important; background-color: white;">
+            <div class="container">
+                <h1 class="display-4 text-center" id="articleTitle"></h1>
+                <br>
+                <p class="lead text-center" id="articleLead">
+                </p>
+            </div>
+        </div>
+        <!-- Info noticia -->
+        <div class="container" id="articleInfo">
+        </div>
+    </div>
+</section>
+</section>
+{{> footer}}
+<script src="/js/jumbotronData.js"></script>

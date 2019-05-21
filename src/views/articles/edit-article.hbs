@@ -1,0 +1,53 @@
+<br>
+<div id="create-article">
+    <div class="container">
+        <div id="editCards">
+            <div class="col-m4-4 mx-auto">
+                <div class="card">
+                    <card class="card-header">
+                        <h3>Editar artículo</h3>
+                    </card>
+                    <div class="card-body">
+                        <form action="/articles/edit-article/{{article._id}}?_method=PUT" method="POST"
+                            id="new-article">
+                            <input type="hidden" name="_method" value="PUT">
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Título</label>
+                                <input type="text" class="form-control" id="title" name="title"
+                                    value="{{article.title}}">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Lead</label>
+                                <textarea type="text" class="form-control" id="lead"
+                                    name="lead">{{article.lead}}</textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Ruta de la imagen</label>
+                                <input type="text" class="form-control" id="routeImg" name="routeImg"
+                                    value="{{article.routeImg}}">
+                            </div>
+                            <div class="form-group">
+                                <label for="selectCategory">Categoría</label>
+                                <select id="category" name="category" class="form-control">
+                                    <option value="videogames">Videojuegos</option>
+                                    <option value="music">Música</option>
+                                    <option value="technology">Tecnología</option>
+                                    <option value="sports">Deportes</option>
+                                    <option value="general">General</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="lead">Cuerpo de la noticia</label>
+                                <textarea class="form-control" id="body" rows="4"
+                                    name="body">{{article.body}}</textarea>
+                            </div>
+                            <button id="sendForm">Save form</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<script src="/js/editArticle.js"></script>
